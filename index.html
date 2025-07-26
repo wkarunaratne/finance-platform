@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Finance Education Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Your Financial Journey</h1>
+    <p>Learn how to budget, save and invest for a secure future.</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="module1.html">Module 1: Budgeting Basics</a></li>
+      <li><a href="#calculator">Budgeting Calculator</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="intro">
+      <h2>Why Financial Literacy Matters</h2>
+      <p>Understanding where your money goes and how to make it work for you is critical.
+         Our courses cover everything from tracking expenses to investing for the long term.</p>
+    </section>
+    <section id="calculator">
+      <h2>Budgeting Calculator</h2>
+      <p>Enter your monthly income and expenses to see how much you can save.</p>
+      <form id="budgetForm">
+        <label for="income">Monthly income (in LKR):</label>
+        <input type="number" id="income" name="income" />
+        <label for="expenses">Monthly expenses (in LKR):</label>
+        <input type="number" id="expenses" name="expenses" />
+        <button type="button" onclick="calculateSavings()">Calculate</button>
+      </form>
+      <p id="result"></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Personal Finance Education Platform</p>
+  </footer>
+  <script src="budget.js"></script>
+</body>
+</html>
